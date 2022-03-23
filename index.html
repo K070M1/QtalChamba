@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REACTIVACIÓN ECONOMICA</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- boostrap -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/themes.css">
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__wobble" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-light text-sm">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+
+      <!-- User Account: style can be found in dropdown.less -->
+      <li class="nav-item dropdown user user-menu">
+        <a href="#" class="nav-link" data-toggle="dropdown">
+          <img src="./dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+          <span class="hidden-xs">Nombre del usuario</span>
+        </a>
+
+        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right user-menu">
+          <!-- User image -->
+          <li class="user-header bg-cyan">
+            <img src="./dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+            <p>
+              NOMBRE Y APELLIDO COMPLETO
+              <small>Febrero . 2022</small>
+            </p>
+          </li>
+          <!-- Menu Body -->
+          <li class="user-body border-0">
+            <div class="row-flex ">
+              <a href="#" class="nav-link">Seguidores</a>
+              <a href="#" class="nav-link">Seguidos</a>
+              <a href="#" class="nav-link">Servicios</a>
+            </div>
+            <!-- /.row -->
+          </li>
+          <!-- Menu Footer-->
+          <li class="user-footer row-flex">
+            <div class="pull-left">
+              <a href="#" class="btn btn-default btn-flat">Perfil</a>
+            </div>
+            
+            <div class="pull-right">
+              <a href="#" class="btn btn-default btn-flat">Cerrar sesión</a>
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+
+      <!-- Full screen -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+
+      <!-- Config -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link ">
+      <!-- <img src="dist/img/logo-editado-5.png" alt="" class="logo"> -->
+
+      <img src="dist/img/logo.png" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light"> Tal Chamba</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Nombre del usuario</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar text-sm flex-column nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v1</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./index2.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v2</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./index3.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v3</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="pages/widgets.html" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Widgets
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Layout Options
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">6</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/layout/top-nav.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Top Navigation</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Top Navigation + Sidebar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/boxed.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Boxed</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Fixed Sidebar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/fixed-sidebar-custom.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Fixed Sidebar <small>+ Custom Area</small></p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/fixed-topnav.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Fixed Navbar</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/fixed-footer.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Fixed Footer</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/layout/collapsed-sidebar.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Collapsed Sidebar</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Charts
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/charts/chartjs.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ChartJS</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/flot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Flot</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/inline.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Inline</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/uplot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>uPlot</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">EXAMPLES</li>
+          <li class="nav-item">
+            <a href="pages/calendar.html" class="nav-link">
+              <i class="nav-icon fas fa-calendar-alt"></i>
+              <p>
+                Calendar
+                <span class="badge badge-info right">2</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/gallery.html" class="nav-link">
+              <i class="nav-icon far fa-image"></i>
+              <p>
+                Gallery
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/kanban.html" class="nav-link">
+              <i class="nav-icon fas fa-columns"></i>
+              <p>
+                Kanban Board
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper text-sm" id="content-body">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Dashboard v2</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v2</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum laudantium minima odio impedit perferendis. Ducimus officiis voluptas quasi assumenda recusandae non fugiat, sapiente saepe quis deserunt, natus obcaecati nam dolorem! Atque omnis est consectetur accusantium nobis dolorum similique, officiis ipsam quo, officia temporibus veritatis cumque ex amet error fugiat labore odio deserunt debitis rerum aliquam illo. Repudiandae vero laborum, cupiditate dignissimos dolorem nihil dolorum natus voluptates quia molestias nobis inventore ipsa quisquam. Officia voluptatem, quo veritatis voluptatum dolorem quia. Ab voluptas id animi cumque, doloremque doloribus aspernatur aliquam temporibus qui molestias excepturi laboriosam commodi sit veniam minima? Porro aspernatur libero deserunt magni, illum consectetur. Officiis, voluptatum quaerat voluptate porro consectetur amet in voluptatem minus, vel minima rem error perferendis, eius maxime ratione rerum quidem sed laborum aspernatur vitae molestiae! Commodi odit ab doloribus corporis dicta doloremque minima reprehenderit totam quis quaerat necessitatibus id laudantium cum minus repellat enim aspernatur delectus natus, est dolore, nobis eum veniam! Ad nemo reiciendis provident dolor enim minus dolore rem id itaque soluta nam, pariatur placeat harum ratione repellendus natus ullam debitis labore officia tempora reprehenderit quo? Ipsa, sequi. Incidunt, sint natus. Cupiditate rerum hic, suscipit voluptatem ullam blanditiis distinctio eveniet ex cumque itaque molestias magnam commodi fuga vero nobis ipsa magni. Fugit libero voluptatibus sint qui ipsum dolorum? Animi nobis magni labore accusamus minus. Architecto minus fugit sequi non aliquid quibusdam iste officiis hic ad at et sed, cum fuga voluptatum? Asperiores perspiciatis, neque vel quod doloremque at magni in sint vero velit ratione. Inventore deserunt consectetur mollitia asperiores qui eos rerum voluptate, ullam modi cum laborum saepe delectus repellat quia adipisci quisquam iste! Amet incidunt cumque obcaecati illo! Consequatur placeat dolor temporibus consectetur optio saepe quisquam ducimus! Repudiandae, excepturi debitis non illum, quod et aperiam nisi ab quasi dolores quos nam earum quaerat id tenetur odio eligendi, dignissimos enim repellat eum molestias voluptatem qui ut? Porro at quia rerum, non, dolor maxime labore cupiditate facilis sed sint modi hic assumenda libero voluptatum ipsa unde, dignissimos nulla nam repellendus. Corrupti alias recusandae fugiat asperiores nostrum at, nesciunt quae deleniti neque quia obcaecati similique beatae soluta aliquid, vitae suscipit? Sunt illum, ex dolore culpa, ratione, voluptate autem totam quae laboriosam odit nisi eaque excepturi dolores assumenda sint harum eum unde fugiat voluptatem! Doloribus dolorem repellat esse laboriosam id quod non, ullam, commodi repudiandae nisi incidunt accusamus similique quos ducimus placeat consectetur labore ratione. Accusantium corrupti necessitatibus, nemo aliquid maiores in facere nihil ipsum dolorum voluptate! Asperiores incidunt perspiciatis in veritatis cupiditate, impedit nulla laborum sequi alias porro, ex mollitia reiciendis? Velit quod eaque distinctio cumque possimus iste sequi amet laboriosam, nisi voluptas harum quia, dolores aliquid totam autem est error adipisci placeat. Placeat quidem voluptates doloribus, dicta vero eius eaque nesciunt sit eos. Quae velit itaque consequuntur aut accusamus enim eveniet tempora nulla ullam dolore sit officia, fuga nesciunt ea. Soluta quas, deleniti fugit praesentium vel, excepturi unde maiores obcaecati quis nam dicta aut quaerat assumenda. A sed saepe doloribus laborum pariatur recusandae iusto dicta, non voluptas qui maxime quaerat delectus temporibus natus hic cupiditate aspernatur magni aut quisquam quas fugiat sequi? Corrupti, ipsa! Natus placeat, quia corrupti nihil omnis consequuntur illo possimus velit praesentium vitae doloribus neque impedit enim quibusdam ex soluta deleniti itaque vel repellendus minus nisi excepturi aut reprehenderit? Hic cupiditate molestias ad tempore, quaerat iure perferendis optio quo dolores. Debitis optio ratione iusto sapiente quibusdam facilis quam quis non quia minima voluptatibus incidunt ipsam labore doloremque corrupti, rerum amet numquam tempora modi cumque, dolores, aut repellendus soluta! Dolorem nulla impedit ex aspernatur vero voluptatum nisi quisquam quasi doloribus magnam, beatae dicta, dignissimos in. Modi, repellendus cum voluptatibus sed accusamus molestiae dignissimos quisquam distinctio, autem aut est dicta similique enim iure nemo minima. Voluptas inventore totam dolorum asperiores ipsum modi enim nostrum reiciendis minima, delectus, exercitationem fugit sit ipsa! Ullam officia a vero ex tempore! Hic sunt ratione ipsam perspiciatis, eveniet expedita natus eum atque non molestias? Eligendi esse repellendus dolorum velit nulla suscipit magnam perspiciatis expedita quos ratione nam pariatur optio, recusandae accusamus distinctio? Accusantium laudantium rem, doloribus vero corporis tenetur harum? Voluptates culpa ut officia id autem quod perspiciatis suscipit dolores nemo impedit magnam at neque voluptatum repudiandae deleniti sunt molestiae hic quas, quis corrupti reiciendis nam nesciunt sint excepturi. Error autem cumque quae, nihil reprehenderit labore enim sit sapiente voluptatem culpa blanditiis, quam excepturi neque, est beatae pariatur voluptate ab cupiditate magni tenetur magnam. Nostrum odio, consectetur assumenda aperiam officiis odit nihil, possimus doloribus similique deserunt quasi optio culpa placeat consequuntur numquam? Fugit atque deleniti modi molestias minima nemo quod, illum, similique officia corrupti esse doloremque quasi iure veniam consequuntur. Quod in molestias ut, at odio accusamus. Illo nulla debitis sit harum aperiam deleniti incidunt, neque illum ipsa consectetur dicta, suscipit, molestiae hic dolorum excepturi commodi voluptates fugiat beatae aliquid deserunt. Nulla dolorem sequi vel in enim eum magni perferendis earum delectus harum recusandae saepe id, odio similique eaque, inventore iste optio, nobis voluptatum quos. Sed illo nemo perspiciatis dolorum, asperiores iusto consequatur nobis! Aspernatur iusto minus magni tempore animi, eveniet, unde tempora tenetur sapiente rem, nemo possimus saepe dolores enim officia neque provident distinctio consequatur dolore. Ut, quidem possimus fuga nulla sed magnam. Architecto ducimus dolorum harum asperiores quod cum labore quas ipsa delectus facere enim hic illum assumenda, eum similique necessitatibus laborum reprehenderit repellendus nesciunt quasi atque ullam eveniet. A dolorem voluptates tempora. Vel doloremque commodi eos velit facere asperiores illo itaque cupiditate quia nesciunt iusto non sequi odit tempora, laudantium accusantium neque, libero vitae nobis alias officia mollitia voluptate? Fugiat laudantium porro repudiandae dignissimos? Quaerat vero praesentium fugit, sint dicta porro, laboriosam officia nobis, recusandae quasi tempore quae. Tempore magnam, saepe fugit voluptatibus dignissimos sit non earum autem doloremque asperiores eveniet nobis laborum numquam optio odio deserunt amet vero atque quam aliquam quo. Sed libero doloremque provident laborum adipisci perferendis debitis laboriosam voluptas molestiae quia cupiditate, facilis vitae corporis quam ad tenetur sapiente obcaecati. Officia error, ipsam non quam suscipit fugit fugiat! Ipsa tenetur ipsum vero.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum laudantium minima odio impedit perferendis. Ducimus officiis voluptas quasi assumenda recusandae non fugiat, sapiente saepe quis deserunt, natus obcaecati nam dolorem! Atque omnis est consectetur accusantium nobis dolorum similique, officiis ipsam quo, officia temporibus veritatis cumque ex amet error fugiat labore odio deserunt debitis rerum aliquam illo. Repudiandae vero laborum, cupiditate dignissimos dolorem nihil dolorum natus voluptates quia molestias nobis inventore ipsa quisquam. Officia voluptatem, quo veritatis voluptatum dolorem quia. Ab voluptas id animi cumque, doloremque doloribus aspernatur aliquam temporibus qui molestias excepturi laboriosam commodi sit veniam minima? Porro aspernatur libero deserunt magni, illum consectetur. Officiis, voluptatum quaerat voluptate porro consectetur amet in voluptatem minus, vel minima rem error perferendis, eius maxime ratione rerum quidem sed laborum aspernatur vitae molestiae! Commodi odit ab doloribus corporis dicta doloremque minima reprehenderit totam quis quaerat necessitatibus id laudantium cum minus repellat enim aspernatur delectus natus, est dolore, nobis eum veniam! Ad nemo reiciendis provident dolor enim minus dolore rem id itaque soluta nam, pariatur placeat harum ratione repellendus natus ullam debitis labore officia tempora reprehenderit quo? Ipsa, sequi. Incidunt, sint natus. Cupiditate rerum hic, suscipit voluptatem ullam blanditiis distinctio eveniet ex cumque itaque molestias magnam commodi fuga vero nobis ipsa magni. Fugit libero voluptatibus sint qui ipsum dolorum? Animi nobis magni labore accusamus minus. Architecto minus fugit sequi non aliquid quibusdam iste officiis hic ad at et sed, cum fuga voluptatum? Asperiores perspiciatis, neque vel quod doloremque at magni in sint vero velit ratione. Inventore deserunt consectetur mollitia asperiores qui eos rerum voluptate, ullam modi cum laborum saepe delectus repellat quia adipisci quisquam iste! Amet incidunt cumque obcaecati illo! Consequatur placeat dolor temporibus consectetur optio saepe quisquam ducimus! Repudiandae, excepturi debitis non illum, quod et aperiam nisi ab quasi dolores quos nam earum quaerat id tenetur odio eligendi, dignissimos enim repellat eum molestias voluptatem qui ut? Porro at quia rerum, non, dolor maxime labore cupiditate facilis sed sint modi hic assumenda libero voluptatum ipsa unde, dignissimos nulla nam repellendus. Corrupti alias recusandae fugiat asperiores nostrum at, nesciunt quae deleniti neque quia obcaecati similique beatae soluta aliquid, vitae suscipit? Sunt illum, ex dolore culpa, ratione, voluptate autem totam quae laboriosam odit nisi eaque excepturi dolores assumenda sint harum eum unde fugiat voluptatem! Doloribus dolorem repellat esse laboriosam id quod non, ullam, commodi repudiandae nisi incidunt accusamus similique quos ducimus placeat consectetur labore ratione. Accusantium corrupti necessitatibus, nemo aliquid maiores in facere nihil ipsum dolorum voluptate! Asperiores incidunt perspiciatis in veritatis cupiditate, impedit nulla laborum sequi alias porro, ex mollitia reiciendis? Velit quod eaque distinctio cumque possimus iste sequi amet laboriosam, nisi voluptas harum quia, dolores aliquid totam autem est error adipisci placeat. Placeat quidem voluptates doloribus, dicta vero eius eaque nesciunt sit eos. Quae velit itaque consequuntur aut accusamus enim eveniet tempora nulla ullam dolore sit officia, fuga nesciunt ea. Soluta quas, deleniti fugit praesentium vel, excepturi unde maiores obcaecati quis nam dicta aut quaerat assumenda. A sed saepe doloribus laborum pariatur recusandae iusto dicta, non voluptas qui maxime quaerat delectus temporibus natus hic cupiditate aspernatur magni aut quisquam quas fugiat sequi? Corrupti, ipsa! Natus placeat, quia corrupti nihil omnis consequuntur illo possimus velit praesentium vitae doloribus neque impedit enim quibusdam ex soluta deleniti itaque vel repellendus minus nisi excepturi aut reprehenderit? Hic cupiditate molestias ad tempore, quaerat iure perferendis optio quo dolores. Debitis optio ratione iusto sapiente quibusdam facilis quam quis non quia minima voluptatibus incidunt ipsam labore doloremque corrupti, rerum amet numquam tempora modi cumque, dolores, aut repellendus soluta! Dolorem nulla impedit ex aspernatur vero voluptatum nisi quisquam quasi doloribus magnam, beatae dicta, dignissimos in. Modi, repellendus cum voluptatibus sed accusamus molestiae dignissimos quisquam distinctio, autem aut est dicta similique enim iure nemo minima. Voluptas inventore totam dolorum asperiores ipsum modi enim nostrum reiciendis minima, delectus, exercitationem fugit sit ipsa! Ullam officia a vero ex tempore! Hic sunt ratione ipsam perspiciatis, eveniet expedita natus eum atque non molestias? Eligendi esse repellendus dolorum velit nulla suscipit magnam perspiciatis expedita quos ratione nam pariatur optio, recusandae accusamus distinctio? Accusantium laudantium rem, doloribus vero corporis tenetur harum? Voluptates culpa ut officia id autem quod perspiciatis suscipit dolores nemo impedit magnam at neque voluptatum repudiandae deleniti sunt molestiae hic quas, quis corrupti reiciendis nam nesciunt sint excepturi. Error autem cumque quae, nihil reprehenderit labore enim sit sapiente voluptatem culpa blanditiis, quam excepturi neque, est beatae pariatur voluptate ab cupiditate magni tenetur magnam. Nostrum odio, consectetur assumenda aperiam officiis odit nihil, possimus doloribus similique deserunt quasi optio culpa placeat consequuntur numquam? Fugit atque deleniti modi molestias minima nemo quod, illum, similique officia corrupti esse doloremque quasi iure veniam consequuntur. Quod in molestias ut, at odio accusamus. Illo nulla debitis sit harum aperiam deleniti incidunt, neque illum ipsa consectetur dicta, suscipit, molestiae hic dolorum excepturi commodi voluptates fugiat beatae aliquid deserunt. Nulla dolorem sequi vel in enim eum magni perferendis earum delectus harum recusandae saepe id, odio similique eaque, inventore iste optio, nobis voluptatum quos. Sed illo nemo perspiciatis dolorum, asperiores iusto consequatur nobis! Aspernatur iusto minus magni tempore animi, eveniet, unde tempora tenetur sapiente rem, nemo possimus saepe dolores enim officia neque provident distinctio consequatur dolore. Ut, quidem possimus fuga nulla sed magnam. Architecto ducimus dolorum harum asperiores quod cum labore quas ipsa delectus facere enim hic illum assumenda, eum similique necessitatibus laborum reprehenderit repellendus nesciunt quasi atque ullam eveniet. A dolorem voluptates tempora. Vel doloremque commodi eos velit facere asperiores illo itaque cupiditate quia nesciunt iusto non sequi odit tempora, laudantium accusantium neque, libero vitae nobis alias officia mollitia voluptate? Fugiat laudantium porro repudiandae dignissimos? Quaerat vero praesentium fugit, sint dicta porro, laboriosam officia nobis, recusandae quasi tempore quae. Tempore magnam, saepe fugit voluptatibus dignissimos sit non earum autem doloremque asperiores eveniet nobis laborum numquam optio odio deserunt amet vero atque quam aliquam quo. Sed libero doloremque provident laborum adipisci perferendis debitis laboriosam voluptas molestiae quia cupiditate, facilis vitae corporis quam ad tenetur sapiente obcaecati. Officia error, ipsam non quam suscipit fugit fugiat! Ipsa tenetur ipsum vero.
+        </p>
+        
+        <h3 class="mt-4 mb-4">Social Widgets</h3>
+
+        <div class="row">
+          <div class="col-md-4">
+            <!-- Widget: user widget style 2 -->
+            <div class="card card-widget widget-user-2">
+              <!-- Add the bg color to the header using any of the bg-* classes -->
+              <div class="widget-user-header bg-warning">
+                <div class="widget-user-image">
+                  <img class="img-circle elevation-2" src="../dist/img/user7-128x128.jpg" alt="User Avatar">
+                </div>
+                <!-- /.widget-user-image -->
+                <h3 class="widget-user-username">Nadia Carmichael</h3>
+                <h5 class="widget-user-desc">Lead Developer</h5>
+              </div>
+              <div class="card-footer p-0">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      Projects <span class="float-right badge bg-primary">31</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      Tasks <span class="float-right badge bg-info">5</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      Completed Projects <span class="float-right badge bg-success">12</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      Followers <span class="float-right badge bg-danger">842</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.widget-user -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-4">
+            <!-- Widget: user widget style 1 -->
+            <div class="card card-widget widget-user">
+              <!-- Add the bg color to the header using any of the bg-* classes -->
+              <div class="widget-user-header bg-info">
+                <h3 class="widget-user-username">Alexander Pierce</h3>
+                <h5 class="widget-user-desc">Founder & CEO</h5>
+              </div>
+              <div class="widget-user-image">
+                <img class="img-circle elevation-2" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-sm-4 border-right">
+                    <div class="description-block">
+                      <h5 class="description-header">3,200</h5>
+                      <span class="description-text">SALES</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-sm-4 border-right">
+                    <div class="description-block">
+                      <h5 class="description-header">13,000</h5>
+                      <span class="description-text">FOLLOWERS</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-sm-4">
+                    <div class="description-block">
+                      <h5 class="description-header">35</h5>
+                      <span class="description-text">PRODUCTS</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+            </div>
+            <!-- /.widget-user -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-4">
+            <!-- Widget: user widget style 1 -->
+            <div class="card card-widget widget-user">
+              <!-- Add the bg color to the header using any of the bg-* classes -->
+              <div class="widget-user-header text-white"
+                   style="background: url('../dist/img/photo1.png') center center;">
+                <h3 class="widget-user-username text-right">Elizabeth Pierce</h3>
+                <h5 class="widget-user-desc text-right">Web Designer</h5>
+              </div>
+              <div class="widget-user-image">
+                <img class="img-circle" src="../dist/img/user3-128x128.jpg" alt="User Avatar">
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-sm-4 border-right">
+                    <div class="description-block">
+                      <h5 class="description-header">3,200</h5>
+                      <span class="description-text">SALES</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-sm-4 border-right">
+                    <div class="description-block">
+                      <h5 class="description-header">13,000</h5>
+                      <span class="description-text">FOLLOWERS</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                  <!-- /.col -->
+                  <div class="col-sm-4">
+                    <div class="description-block">
+                      <h5 class="description-header">35</h5>
+                      <span class="description-text">PRODUCTS</span>
+                    </div>
+                    <!-- /.description-block -->
+                  </div>
+                  <!-- /.col -->
+                </div>
+                <!-- /.row -->
+              </div>
+            </div>
+            <!-- /.widget-user -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Box Comment -->
+            <div class="card card-widget">
+              <div class="card-header">
+                <div class="user-block">
+                  <img class="img-circle" src="../dist/img/user1-128x128.jpg" alt="User Image">
+                  <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                  <span class="description">Shared publicly - 7:30 PM Today</span>
+                </div>
+                <!-- /.user-block -->
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" title="Mark as read">
+                    <i class="far fa-circle"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <!-- /.card-tools -->
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <img class="img-fluid pad" src="../dist/img/photo2.png" alt="Photo">
+
+                <p>I took this photo this morning. What do you guys think?</p>
+                <button type="button" class="btn btn-default btn-sm"><i class="fas fa-share"></i> Share</button>
+                <button type="button" class="btn btn-default btn-sm"><i class="far fa-thumbs-up"></i> Like</button>
+                <span class="float-right text-muted">127 likes - 3 comments</span>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer card-comments">
+                <div class="card-comment">
+                  <!-- User image -->
+                  <img class="img-circle img-sm" src="../dist/img/user3-128x128.jpg" alt="User Image">
+
+                  <div class="comment-text">
+                    <span class="username">
+                      Maria Gonzales
+                      <span class="text-muted float-right">8:03 PM Today</span>
+                    </span><!-- /.username -->
+                    It is a long established fact that a reader will be distracted
+                    by the readable content of a page when looking at its layout.
+                  </div>
+                  <!-- /.comment-text -->
+                </div>
+                <!-- /.card-comment -->
+                <div class="card-comment">
+                  <!-- User image -->
+                  <img class="img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="User Image">
+
+                  <div class="comment-text">
+                    <span class="username">
+                      Luna Stark
+                      <span class="text-muted float-right">8:03 PM Today</span>
+                    </span><!-- /.username -->
+                    It is a long established fact that a reader will be distracted
+                    by the readable content of a page when looking at its layout.
+                  </div>
+                  <!-- /.comment-text -->
+                </div>
+                <!-- /.card-comment -->
+              </div>
+              <!-- /.card-footer -->
+              <div class="card-footer">
+                <form action="#" method="post">
+                  <img class="img-fluid img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="Alt Text">
+                  <!-- .img-push is used to add margin to elements next to floating images -->
+                  <div class="img-push">
+                    <input type="text" class="form-control form-control-sm" placeholder="Press enter to post comment">
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-info">Send</button>
+                    </div>
+                  </div>
+                </form>
+                
+                
+              </div>
+              <!-- /.card-footer -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-6">
+            <!-- Box Comment -->
+            <div class="card card-widget">
+              <div class="card-header">
+                <div class="user-block">
+                  <img class="img-circle" src="../dist/img/user1-128x128.jpg" alt="User Image">
+                  <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
+                  <span class="description">Shared publicly - 7:30 PM Today</span>
+                </div>
+                <!-- /.user-block -->
+                <div class="card-tools">
+                  <button type="button" class="btn btn-tool" title="Mark as read">
+                    <i class="far fa-circle"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <button type="button" class="btn btn-tool" data-card-widget="remove">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <!-- /.card-tools -->
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <!-- post text -->
+                <p>Far far away, behind the word mountains, far from the
+                  countries Vokalia and Consonantia, there live the blind
+                  texts. Separated they live in Bookmarksgrove right at</p>
+
+                <p>the coast of the Semantics, a large language ocean.
+                  A small river named Duden flows by their place and supplies
+                  it with the necessary regelialia. It is a paradisematic
+                  country, in which roasted parts of sentences fly into
+                  your mouth.</p>
+
+                <!-- Attachment -->
+                <div class="attachment-block clearfix">
+                  <img class="attachment-img" src="../dist/img/photo1.png" alt="Attachment Image">
+
+                  <div class="attachment-pushed">
+                    <h4 class="attachment-heading"><a href="https://www.lipsum.com/">Lorem ipsum text generator</a></h4>
+
+                    <div class="attachment-text">
+                      Description about the attachment can be placed here.
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry... <a href="#">more</a>
+                    </div>
+                    <!-- /.attachment-text -->
+                  </div>
+                  <!-- /.attachment-pushed -->
+                </div>
+                <!-- /.attachment-block -->
+
+                <!-- Social sharing buttons -->
+                <button type="button" class="btn btn-default btn-sm"><i class="fas fa-share"></i> Share</button>
+                <button type="button" class="btn btn-default btn-sm"><i class="far fa-thumbs-up"></i> Like</button>
+                <span class="float-right text-muted">45 likes - 2 comments</span>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer card-comments">
+                <div class="card-comment">
+                  <!-- User image -->
+                  <img class="img-circle img-sm" src="../dist/img/user3-128x128.jpg" alt="User Image">
+
+                  <div class="comment-text">
+                    <span class="username">
+                      Maria Gonzales
+                      <span class="text-muted float-right">8:03 PM Today</span>
+                    </span><!-- /.username -->
+                    It is a long established fact that a reader will be distracted
+                    by the readable content of a page when looking at its layout.
+                  </div>
+                  <!-- /.comment-text -->
+                </div>
+                <!-- /.card-comment -->
+                <div class="card-comment">
+                  <!-- User image -->
+                  <img class="img-circle img-sm" src="../dist/img/user5-128x128.jpg" alt="User Image">
+
+                  <div class="comment-text">
+                    <span class="username">
+                      Nora Havisham
+                      <span class="text-muted float-right">8:03 PM Today</span>
+                    </span><!-- /.username -->
+                    The point of using Lorem Ipsum is that it hrs a morer-less
+                    normal distribution of letters, as opposed to using
+                    'Content here, content here', making it look like readable English.
+                  </div>
+                  <!-- /.comment-text -->
+                </div>
+                <!-- /.card-comment -->
+              </div>
+              <!-- /.card-footer -->
+              <div class="card-footer">
+                <form action="#" method="post">
+                  <img class="img-fluid img-circle img-sm" src="../dist/img/user4-128x128.jpg" alt="Alt Text">
+                  <!-- .img-push is used to add margin to elements next to floating images -->
+                  <div class="img-push">
+                    <input type="text" class="form-control form-control-sm" placeholder="Press enter to post comment">
+                  </div>
+                </form>
+              </div>
+              <!-- /.card-footer -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+      </div><!--/. container-fluid -->
+    </section>
+    <!-- /.content -->
+
+    <!-- Subir al inicio -->
+    <a id="back-to-top" href="#content-body" class="btn btn-dark back-to-top" role="button" aria-label="Scroll to top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark" style="overflow: hidden;">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3 control-sidebar-content text-sm" style="height: fit-content;">
+      <h5>Configuración</h5>
+      <hr class="mb-2"/>
+
+      <div class="mb-4">
+        <input type="checkbox" class="mr-1" id="cbox-dark-mode">
+        <span>Modo oscuro</span>
+      </div>
+      
+      <h6>Opciones de la cabecera</h6>
+      
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" checked id="cbox-fixed-header">
+        <span>Fijo</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" id="cbox-dropdown-header">
+        <span>Desplegable</span>
+      </div>
+      <div class="mb-4">
+        <input type="checkbox" class="mr-1" id="cbox-border-header">
+        <span>Sin border</span>
+      </div>
+      
+      <h6>Opciones de la barra lateral</h6>
+
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" id="cbox-collapse-sidebar">
+        <span>Contraído</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" checked id="cbox-fixed-sidebar">
+        <span>Fijo</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" checked id="cbox-sidebar-mini">
+        <span>Pequeño</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" id="cbox-sidebar-mini-md">
+        <span> Mediano</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" id="cbox-sidebar-mini-xs">
+        <span> Extra pequeño</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" id="cbox-sidebar-flat-style">
+        <span>Estilo plano (flat)</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" id="cbox-sidebar-legacy-style">
+        <span>Estilo heredado (legacy)</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" id="cbox-sidebar-compact">
+        <span>Compacto</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" checked id="cbox-nav-child-ident">
+        <span>Identación de los elementos</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" id="cbox-sidebar-child-hide">
+        <span>Elementos ocultos al colapsar</span>
+      </div>
+      <div class="mb-4">
+        <input type="checkbox" class="mr-1" id="cbox-sidebar-disable-focus">
+        <span>Deshabilitar autoexpansión (Hover/Focus)</span>
+      </div>
+
+      <h6>Opciones del pie de pagina</h6>
+      <div class="mb-4">
+        <input type="checkbox" class="mr-1" id="cbox-footer-fixed">
+        <span>Fijo</span>
+      </div>
+
+      <h6>Opciones de texto pequeño</h6>
+
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" id="cbox-small-text-body">
+        <span>Toda la página</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" checked id="cbox-small-text-content-wrapper">
+        <span>Contenido</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" id="cbox-small-text-navbar" checked>
+        <span>Barra de navegación</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" id="cbox-small-text-brand">
+        <span>Logo</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" id="cbox-small-text-sidebar" checked>
+        <span>Barra lateral izquierdo</span>
+      </div>
+      <div class="mb-1">
+        <input type="checkbox" class="mr-1" id="cbox-small-text-sidebar-right" checked>
+        <span>Barra lateral derecho</span>
+      </div>
+      <div class="mb-4">
+        <input type="checkbox" class="mr-1" id="cbox-small-text-footer" checked>
+        <span>Pie de página</span>
+      </div>
+
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer text-sm">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0
+    </div>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+
+
+<!-- PAGE PLUGINS -->
+<!-- jQuery Mapael -->
+<script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="plugins/raphael/raphael.min.js"></script>
+<script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+
+<!-- Config theme -->
+<script src="./dist/js/config.js"></script>
+
+<!-- AdminLTE for demo purposes -->
+<!-- <script src="dist/js/demo.js"></script> -->
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script>
+  // Scroll to top button appear
+  $(document).on('scroll', function() {
+    var scrollDistance = $(this).scrollTop();
+    if (scrollDistance > 100) {
+      $('#back-to-top').remove('d-none');
+      $('#back-to-top').fadeIn();
+    } else {
+      $('#back-to-top').fadeOut();
+    }
+  });
+</script>
+</body>
+</html>

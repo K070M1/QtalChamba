@@ -1,0 +1,37 @@
+/* 
+COLORES EN INGLES
+--------------------------------
+1 -  YELLOW  = Amarillo
+2 -  PINK    = Rosa
+3 -  PURPLE  = Morado
+4 -  BLUE    = Azul
+5 -  ORANGE  = Naranja
+6 -  GREEN   = Verde
+7 -  WHITE   = Blanco
+8 -  GRAY    = Gris
+9 -  SILVER  = Plateado
+10 - STEEL   = Acero
+11 - WOOD    = Madera
+12 - SKY     = Cielo
+13 - TAN     = Canela
+14 - BROWN   = Café
+15 - GOLD    = Oro
+16 - RED     = Rojo
+17 - BLACK   = Negro
+18 - Turquoise   = Turquesa
+19 - LAVENDER    = Lavanda
+20 - TEAL       = Verde azulado
+21  - VIOLET    = Violeta
+*/
+
+/* COLORES DE FONDO */
+/* VERDE */
+.bg-primary {
+    background-color: #106bcc !important;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #106bcc !important;
+  border-color: #17a2b8 !important;
+}
